@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowFashion - Koleksi Idol 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .bg-custom-gradient {
+            background: linear-gradient(135deg, #fdf2f8 0%, #ecfdf5 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #ec4899, #10b981);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-glow {
+            box-shadow: 0 0 50px rgba(236, 72, 153, 0.2);
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        .strobe-text {
+            animation: strobe 2s infinite;
+        }
+        @keyframes strobe {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-custom-gradient min-h-screen overflow-x-hidden text-gray-900">
+
+    <!-- Banner Flash Sale -->
+    <div class="bg-black text-white py-2.5 text-center text-xs md:text-sm font-black sticky top-0 z-[60] tracking-[0.2em] uppercase">
+        <span class="strobe-text">🔥 2026 IDOL WORLD TOUR COLLECTION — LIMITED DROP BERAKHIR: <span id="countdown" class="text-pink-500">00:00:00</span> 🔥</span>
+    </div>
+
+    <!-- Navigasi -->
+    <nav class="sticky top-[40px] z-50 glass-card px-8 py-5 flex justify-between items-center shadow-lg border-b border-white/50">
+        <div class="text-3xl font-black text-gradient tracking-tighter italic">GlowFashion</div>
+        <div class="hidden lg:flex space-x-12 font-extrabold text-sm uppercase tracking-widest text-gray-800">
+            <a href="#home" class="hover:text-pink-500 transition-colors border-b-2 border-transparent hover:border-pink-500 pb-1">Beranda</a>
+            <a href="#wanita" class="hover:text-pink-500 transition-colors border-b-2 border-transparent hover:border-pink-500 pb-1">Wanita</a>
+            <a href="#pria" class="hover:text-green-600 transition-colors border-b-2 border-transparent hover:border-green-600 pb-1">Pria</a>
+            <a href="#testimoni" class="hover:text-pink-500 transition-colors border-b-2 border-transparent hover:border-pink-500 pb-1">Cerita Kami</a>
+        </div>
+        <div class="flex items-center space-x-6">
+            <button class="text-gray-900 hover:scale-110 transition"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></button>
+            <div class="relative cursor-pointer group">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:text-pink-600 transition" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" /></svg>
+                <span class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] rounded-full w-5 h-5 flex items-center justify-center font-black shadow-lg">03</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Hero -->
+    <section id="home" class="relative min-h-[90vh] flex items-center overflow-hidden pt-10">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-pink-200/40 via-transparent to-transparent -z-10"></div>
+        
+        <div class="container mx-auto px-6 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-6 text-center lg:text-left order-2 lg:order-1">
+                <div class="flex items-center justify-center lg:justify-start gap-3 mb-8">
+                    <span class="h-[2px] w-12 bg-pink-500"></span>
+                    <span class="text-pink-500 font-black uppercase tracking-[0.3em] text-xs">Era Idol Dimulai</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-[100px] font-black leading-[0.85] text-gray-900 tracking-tighter mb-10">
+                    THE <br> <span class="text-gradient">NEXT GEN</span> <br> VISUAL.
+                </h1>
+                
+                <p class="text-gray-500 text-lg md:text-xl mb-12 max-w-lg leading-relaxed font-medium">
+                    Jadilah karakter utama dengan koleksi eksklusif 2026. Desain futuristik yang menggabungkan kenyamanan harian dengan aura panggung Seoul.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start">
+                    <a href="#wanita" class="group relative px-12 py-5 bg-gray-900 text-white rounded-full font-black overflow-hidden shadow-2xl transition-all hover:scale-105 active:scale-95 text-center">
+                        <span class="relative z-10 uppercase tracking-widest">Koleksi Wanita</span>
+                        <div class="absolute inset-0 bg-pink-600 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                    </a>
+                    <a href="#pria" class="px-12 py-5 bg-white text-gray-900 border-2 border-gray-900 rounded-full font-black hover:bg-green-50 transition-all hover:scale-105 active:scale-95 text-center uppercase tracking-widest">
+                        Koleksi Pria
+                    </a>
+                </div>
+                
+                <div class="mt-16 pt-8 border-t border-gray-200 flex justify-center lg:justify-start gap-12">
+                    <div>
+                        <p class="text-3xl font-black">200K+</p>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">Fans Seluruh Dunia</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl font-black">2026</p>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-widest mt-1">Trend Setter</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 relative order-1 lg:order-2">
+                <div class="relative animate-float mx-auto max-w-md lg:max-w-full">
+                    <div class="relative z-10 glass-card p-4 rounded-[3rem] hero-glow">
+                        <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=1200" 
+                             alt="[Gambar Model Wanita Fashion Modern]" 
+                             class="rounded-[2.5rem] w-full h-[600px] object-cover shadow-inner">
+                        <div class="absolute -right-8 top-1/4 bg-white p-6 rounded-3xl shadow-2xl border border-pink-100 hidden md:block">
+                            <p class="text-pink-600 font-black text-2xl">#1</p>
+                            <p class="text-[10px] font-bold text-gray-400 uppercase leading-none">Pilihan Global Idol</p>
+                        </div>
+                    </div>
+                    <div class="absolute top-10 left-10 w-full h-full bg-pink-400/20 rounded-[3rem] -z-10 rotate-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Koleksi Wanita -->
+    <section id="wanita" class="py-32">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-end gap-6 mb-20">
+                <div class="max-w-2xl">
+                    <p class="text-pink-500 font-black uppercase tracking-[0.4em] text-xs mb-4">The Stage Collection</p>
+                    <h2 class="text-5xl md:text-7xl font-black text-gray-900 tracking-tighter">Wanita <br> <span class="text-pink-500 italic">Signature Aura</span></h2>
+                </div>
+                <button class="bg-white border-2 border-gray-900 px-8 py-4 rounded-full font-black hover:bg-gray-900 hover:text-white transition-all uppercase text-sm tracking-widest">Lihat Semua</button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[3rem] bg-gray-200 aspect-[3/4] mb-8 shadow-xl">
+                        <img src="https://images.pexels.com/photos/1375736/pexels-photo-1375736.jpeg?auto=compress&cs=tinysrgb&w=800" alt="[Gambar Strawberry Pop Knit]" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-black text-2xl text-gray-900">Strawberry Pop Knit</h3>
+                        <div class="text-pink-600 font-black text-2xl">Rp 215K</div>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[3rem] bg-gray-200 aspect-[3/4] mb-8 shadow-xl">
+                        <img src="https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg?auto=compress&cs=tinysrgb&w=800" alt="[Gambar Angelic White Dress]" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-black text-2xl text-gray-900">Angelic White Dress</h3>
+                        <div class="text-pink-600 font-black text-2xl">Rp 480K</div>
+                    </div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[3rem] bg-gray-200 aspect-[3/4] mb-8 shadow-xl">
+                        <!-- Mengganti foto background kuning sebelumnya dengan background studio netral -->
+                        <img src="https://images.pexels.com/photos/1485031/pexels-photo-1485031.jpeg?auto=compress&cs=tinysrgb&w=800" alt="[Gambar Midnight Diva Blazer]" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <h3 class="font-black text-2xl text-gray-900">Midnight Diva Blazer</h3>
+                        <div class="text-pink-600 font-black text-2xl">Rp 650K</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Koleksi Pria -->
+    <section id="pria" class="py-32 bg-gray-950 text-white rounded-[5rem] mx-4 mb-24 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-green-600/10 blur-[150px] rounded-full -mr-96 -mt-96"></div>
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="flex flex-col lg:flex-row justify-between lg:items-end mb-20 gap-8">
+                <div>
+                    <p class="text-green-400 font-black uppercase tracking-[0.4em] text-xs mb-4">Ultimate Boyfriend Drop</p>
+                    <h2 class="text-6xl font-black tracking-tighter">Pria <span class="text-green-400">Impact</span></h2>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[3rem] bg-gray-800 aspect-[3/4] mb-8 shadow-2xl border border-white/10">
+                        <img src="https://images.pexels.com/photos/1018911/pexels-photo-1018911.jpeg?auto=compress&cs=tinysrgb&w=800" alt="[Gambar Katalog Seoul Street Bomber]" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                        <div class="absolute top-6 left-6 bg-green-500 text-black px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">New Arrival</div>
+                    </div>
+                    <h3 class="font-black text-2xl mb-2">Seoul Street Bomber</h3>
+                    <div class="text-green-400 font-black text-3xl">Rp 525K</div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[3rem] bg-gray-800 aspect-[3/4] mb-8 shadow-xl border border-white/10">
+                        <img src="https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg?auto=compress&cs=tinysrgb&w=800" alt="[Gambar Katalog Oversized Cloud Hoodie]" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <h3 class="font-black text-2xl mb-2 text-white">Oversized Cloud Hoodie</h3>
+                    <div class="text-green-400 font-black text-3xl">Rp 345K</div>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-[3rem] bg-gray-800 aspect-[3/4] mb-8 shadow-xl border border-white/10">
+                        <img src="https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=800" alt="[Gambar Katalog Neo Leather Jacket]" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                    </div>
+                    <h3 class="font-black text-2xl mb-2 text-white">Neo Leather Jacket</h3>
+                    <div class="text-green-400 font-black text-3xl">Rp 890K</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="py-24 container mx-auto px-6">
+        <div class="text-center mb-24">
+            <h2 class="text-5xl font-black text-gray-900 mb-6 tracking-tighter italic uppercase">Galeri Visual</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div class="glass-card p-12 rounded-[3.5rem] shadow-xl">
+                <p class="text-gray-600 italic font-bold">"Beneran 'Next Gen Visual'! Kualitas bajunya juara banget buat dipakai harian."</p>
+                <p class="mt-6 font-black">— Jessica J.</p>
+            </div>
+            <div class="bg-gray-900 p-12 rounded-[3.5rem] shadow-2xl text-white transform lg:-translate-y-12">
+                <p class="text-gray-300 italic font-bold">"Vibe Seoul 2026 berasa banget di koleksi pria ini. Jaketnya gokil!"</p>
+                <p class="mt-6 font-black text-green-400">— Raka S.</p>
+            </div>
+            <div class="glass-card p-12 rounded-[3.5rem] shadow-xl">
+                <p class="text-gray-600 italic font-bold">"Gak nyesel beli di sini. Dapet bonus photocart eksklusif juga!"</p>
+                <p class="mt-6 font-black">— Alya P.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-white pt-24 pb-12 border-t-4 border-gray-900">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-16">
+            <div class="md:col-span-2">
+                <h2 class="text-4xl font-black text-gradient italic mb-8 tracking-tighter">GlowFashion.</h2>
+                <p class="text-gray-500 font-bold max-w-sm mb-10 leading-loose">Pusat Fashion Idol-Core Terbaik. Memelopori revolusi visual 2026.</p>
+            </div>
+            <div>
+                <h4 class="font-black text-gray-900 mb-8 uppercase tracking-[0.2em] text-xs">Kategori</h4>
+                <ul class="space-y-4 text-gray-500 font-extrabold uppercase text-xs tracking-widest">
+                    <li><a href="#" class="hover:text-pink-500 transition">Stage Drop</a></li>
+                    <li><a href="#" class="hover:text-pink-500 transition">Harian Idol</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-gray-900 mb-8 uppercase tracking-[0.2em] text-xs">Hubungi Kami</h4>
+                <p class="text-gray-500 font-extrabold text-sm mb-2">WA: 0812-9999-2026</p>
+                <p class="text-gray-900 font-black text-sm hover:text-pink-500 transition cursor-pointer">EMAIL: support@glowfashion.id</p>
+            </div>
+        </div>
+        <div class="text-center mt-24 text-gray-300 font-black text-[10px] uppercase tracking-[0.5em]">
+            &copy; 2026 GLOWFASHION INTERACTIVE. SELURUH HAK CIPTA DILINDUNGI.
+        </div>
+    </footer>
+
+    <script>
+        // Penghitung Mundur
+        function startCountdown() {
+            let totalSeconds = 2 * 3600 + 59 * 60 + 59;
+            const display = document.getElementById('countdown');
+            if (!display) return;
+
+            const timer = setInterval(() => {
+                if (totalSeconds <= 0) {
+                    clearInterval(timer);
+                    return;
+                }
+                totalSeconds--;
+                let hours = Math.floor(totalSeconds / 3600);
+                let minutes = Math.floor((totalSeconds % 3600) / 60);
+                let seconds = totalSeconds % 60;
+                display.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+            }, 1000);
+        }
+        window.onload = startCountdown;
+
+        // Gulir Halus
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId !== '#' && targetId.startsWith('#')) {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        window.scrollTo({ top: targetElement.offsetTop - 120, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
